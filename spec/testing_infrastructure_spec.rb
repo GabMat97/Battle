@@ -8,10 +8,7 @@
 
 feature 'Filling player names' do
   scenario 'User enters names at start' do
-    visit "/"
-    fill_in 'Player1_name', with: 'Gabe'
-    fill_in 'Player2_name', with: 'Carol'
-    click_button 'submit'
+    sign_in_and_play
     expect(page).to have_text("Gabe vs Carol")
   end
 end
