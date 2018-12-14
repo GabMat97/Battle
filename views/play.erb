@@ -1,3 +1,7 @@
-<%= @name1 %> vs <%= @name2 %> <br></br>
-<%= "#{@name1} HP:50" %> <br> </br>
-<%= "#{@name2} HP:5" %>
+<%= @name1.name %> vs <%= @name2.name %> <br></br>
+<%= @name1.name %> HP: 50<br> </br>
+<%= "#{@name2.name} HP:5" %> <br> </br>
+<form action="/move1" method="post">
+  <div>
+    <input type="submit" value="attack">
+  </div>
